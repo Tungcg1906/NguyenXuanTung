@@ -1,6 +1,6 @@
 # 🚀 Portfolio Website
 
-This repository contains the code for my personal [porfolio website](https://hiepnguyen2000.github.io/Hiep.github.io/).
+This repository contains the code for my personal [porfolio website](https://tungcg1906.github.io/NguyenXuanTung/).
 
 ## Features
 
