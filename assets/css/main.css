@@ -41,7 +41,7 @@ img {
 
 /* Header */
 #header {
-    background-image: url('bg.jpg'); /* Replace with your image file path */
+    background-image: url('bg.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 2em 0;
@@ -52,7 +52,7 @@ img {
 #header .inner {
     max-width: 800px;
     margin: 0 auto;
-    color: #fff; /* Change the text color to white for better contrast with the background image */
+    color: #e0e0e0; /* Change the text color to white for better contrast with the background image */
 }
 
 #header .avatar-image {
@@ -147,6 +147,9 @@ img {
     margin-bottom: 8px;
 }
 
+.experience-item ul {
+    list-style: disc; /* This will show standard disc bullet points */
+  }
 
 /* Footer */
 #footer {
