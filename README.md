@@ -6,9 +6,9 @@ This repository contains the code for my personal [porfolio website](https://tun
 
 - Responsive design
 - Projects showcase
-- Skills
-- Degrees
-- Certifications
+- Experiences
+- Publications
+- Talks
 - Contact information
 
 ## Installation
