@@ -76,6 +76,49 @@ img {
     margin-bottom: 2em;
 }
 
+/* Navigation bar */
+.nav {
+    overflow: hidden; /* Ensures all navigation items are contained within the parent */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Clear any overflow issues */
+}
+
+.nav ul li {
+    float: left; /* Float each menu item to the left */
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #f4f4f4; /* Hover color */
+    color: #007bff; /* Hover text color */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        float: none;
+        margin-bottom: 10px; /* Adjust spacing between menu items */
+    }
+}
+
 /* Affiliations section */
 .affiliations-section {
     background: #fff;
