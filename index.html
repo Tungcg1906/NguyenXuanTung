@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 <head>
     <title>Nguyen Xuan Tung</title>
@@ -9,70 +8,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico?" />
     <meta name="google-site-verification" content="pSEhyk-pzzrIVkWPV1Ul96aa9kQzAQchUKlB59M6P-0" />
-    <style>
-        .nav.navbar-nav.navbar-nav-first {
-            display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            margin-right: 20px; /* Adjust as needed for spacing */
-        }
-        .nav.navbar-nav.navbar-nav-first li {
-            list-style: none; /* Removes the bullet points */
-            margin-left: 15px; /* Adjust spacing between links */
-        }
-        .nav.navbar-nav.navbar-nav-first li a {
-            color: #333; /* Sets the text color to a dark gray */
-            text-decoration: none; /* Optional: Removes underline from links */
-        }
-        .nav.navbar-nav.navbar-nav-first li a:hover {
-            text-decoration: underline; /* Underline links on hover */
-        }
-        .affiliations-section {
-            margin-top: 20px;
-        }
-        .affiliations-section h3 {
-            margin-bottom: 10px;
-        }
-        .affiliations-section img {
-            max-width: 100%; /* Ensures images are responsive and scale to fit */
-            height: auto; /* Maintains aspect ratio */
-            margin: 10px;
-            vertical-align: middle;
-        }
-        .affiliations-section .affiliation-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .affiliations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
-        nav {
-            background-color: transparent; /* Sets the background color to transparent */
-            padding: 10px;
-            border-bottom: none; /* Removes the border */
-        }
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: #333; /* Sets the text color to a dark gray */
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #e0e0e0; /* Changes the background color on hover */
-        }
-        
-    </style>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body class="is-preload">
@@ -85,7 +22,6 @@
             <li><a href="experiences.html">Experiences</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="talks.html">Talks</a></li>
-            <!-- <li><a href="cv.html">CV</a></li> -->
         </ul>
     </div>
 </nav>
@@ -106,14 +42,10 @@
         <header class="major">
             <h2>About me</h2>
         </header>
-        <p> I am currently based in Padova, working as a Junior Research Fellow with INFN and SciComp at RPTU, focusing on "Particle Detector Optimization with Deep Learning Techniques." I am a physicist and data scientist graduated at the University of Padova with Msc in Physics of Data.</p>
-            
+        <p>I am currently based in Padova, working as a Junior Research Fellow with INFN and SciComp at RPTU, focusing on "Particle Detector Optimization with Deep Learning Techniques." I am a physicist and data scientist graduated at the University of Padova with Msc in Physics of Data.</p>
         <p>Previously, I served as a laboratory research assistant in the Biophysics and Cell Biology Department at the University of Debrecen. There, I explored the expression of wild-type and mutant Kv1.3 channels in the CHO cell line, employing patch-clamp techniques and analyzing the resulting data. Additionally, I worked as a research analyst at the Neurochip Lab, where I examined neuronal recordings from in vitro neuronal cultures using multi-electrode arrays (MEAs). My research involved developing theories related to transfer entropy, coincidence analysis, and functional connectivity.
-            
             Currently, I am collaborating with the SciComp team at RPTU on developing algorithmic differentiation for calorimeter applications at INFN.</p>
-            
-        <p> I aspire to leverage my knowledge and skills to make a significant impact, aiding organizations in thriving in the digital era. My broad interests include biophysics, particle physics, and scientific computing, as well as the theory of computation, programming languages, and string theory. Additionally, I am deeply passionate about scientific machine learning, computer vision, and data science.
-        </p>
+        <p>I aspire to leverage my knowledge and skills to make a significant impact, aiding organizations in thriving in the digital era. My broad interests include biophysics, particle physics, and scientific computing, as well as the theory of computation, programming languages, and string theory. Additionally, I am deeply passionate about scientific machine learning, computer vision, and data science.</p>
 
         <!-- Affiliations Section -->
         <div class="affiliations-section">
@@ -142,48 +74,17 @@
     </section>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var phoneIcon = document.getElementById('phoneIcon');
-        var phoneNumber = document.getElementById('phoneNumber');
-
-        phoneIcon.addEventListener('click', function () {
-            // Toggle the visibility of the phone number
-            phoneNumber.style.display = (phoneNumber.style.display === 'none' || phoneNumber.style.display === '') ? 'block' : 'none';
-        });
-    });
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var addressIcon = document.getElementById('addressIcon');
-        var address = document.getElementById('address');
-
-        addressIcon.addEventListener('click', function () {
-            // Toggle the visibility of the address
-            address.style.display = (address.style.display === 'none' || address.style.display === '') ? 'block' : 'none';
-        });
-    });
-</script>
-
 <!-- Footer -->
 <footer id="footer">
     <div class="inner">
         <ul class="icons">
-            <li><a href="https://x.com/XunTngNguyn13" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="https://github.com/Tungcg1906" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://www.linkedin.com/in/tungnguyen1998/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="mailto:tungcg1906@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://x.com/XunTngNguyn13" class="icon brands fab fa-twitter"><span class="label"></span></a></li>
+            <li><a href="https://github.com/Tungcg1906" class="icon brands fab fa-github"><span class="label"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/tungnguyen1998/" class="icon brands fab fa-linkedin"><span class="label"></span></a></li>
+            <li><a href="mailto:tungcg1906@gmail.com" class="icon solid fas fa-envelope"><span class="label"></span></a></li>
         </ul>
     </div>
 </footer>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.poptrox.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
 
 </body>
 </html>

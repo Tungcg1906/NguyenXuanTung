@@ -8,23 +8,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico?" />
     <meta name="google-site-verification" content="pSEhyk-pzzrIVkWPV1Ul96aa9kQzAQchUKlB59M6P-0" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <style>
-        .nav.navbar-nav.navbar-nav-first {
-            display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            margin-right: 20px; /* Adjust as needed for spacing */
-        }
-        .nav.navbar-nav.navbar-nav-first li {
-            list-style: none; /* Removes the bullet points */
-            margin-left: 15px; /* Adjust spacing between links */
-        }
-        .nav.navbar-nav.navbar-nav-first li a {
-            color: #333; /* Sets the text color to a dark gray */
-            text-decoration: none; /* Optional: Removes underline from links */
-        }
-        .nav.navbar-nav.navbar-nav-first li a:hover {
-            text-decoration: underline; /* Underline links on hover */
-        }
         .affiliations-section {
             margin-top: 20px;
         }
@@ -47,28 +33,6 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 10px;
         }
-        nav {
-            background-color: transparent; /* Sets the background color to transparent */
-            padding: 10px;
-            border-bottom: none; /* Removes the border */
-        }
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: #333; /* Sets the text color to a dark gray */
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #e0e0e0; /* Changes the background color on hover */
-        }
         .talk-item {
             margin-bottom: 40px;
         }
@@ -79,15 +43,6 @@
         .talk-item img {
             max-width: 150px; /* Adjust the size of the image */
             margin-left: 20px; /* Adjust spacing between title and image */
-        }
-        .talk-item .abstract {
-            margin-top: 10px;
-            font-style: italic;
-            color: #666;
-        }
-        .talk-item .details {
-            font-size: 0.9em;
-            color: #666;
         }
     </style>
 </head>
@@ -116,52 +71,44 @@
 </header>
 
 <!-- Main -->
-<div id="main">
-    <!-- One -->
-    <section id="one">
-        <header class="major">
-            <h2>Talks, presentations, posters, workshops, ...</h2>
-        </header>
-        
-        <!-- Talk Items -->
-        <div class="talk-item">
-            <h3>
-                <a href="https://www.scicomp.uni-kl.de/teaching/scientific-computing-seminar/?event_id1=4057" target="_blank">Neural connectivity: a parallel in vitro and in silico analysis</a>
-                <img src="images/scicomp_rptu_old_color_layer_1_141.png" alt="Neuro computing" />
-            </h3>
-        </div>
+<div class="content">
+    <div id="main">
+        <!-- One -->
+        <section id="one">
+            <header class="major">
+                <h2>Talks, presentations, posters, workshops, ...</h2>
+            </header>
 
-        <div class="talk-item">
-            <h3>
-                <a href="https://indico.cern.ch/event/1380163/" target="_blank">Particle Detectors optimization with Deep Learning techniques</a>
-                <img src="images/MODE.png" alt="Deep Learning Techniques" />
-            </h3>
-        </div>
+            <!-- Talk Items -->
+            <div class="talk-item">
+                <h3>
+                    <a href="https://www.scicomp.uni-kl.de/teaching/scientific-computing-seminar/?event_id1=4057" target="_blank">Neural connectivity: a parallel in vitro and in silico analysis</a>
+                    <img src="images/scicomp_rptu_old_color_layer_1_141.png" alt="Neuro computing" />
+                </h3>
+            </div>
 
-    </section>
+            <div class="talk-item">
+                <h3>
+                    <a href="https://indico.cern.ch/event/1380163/" target="_blank">Particle Detectors optimization with Deep Learning techniques</a>
+                    <img src="images/MODE.png" alt="Deep Learning Techniques" />
+                </h3>
+            </div>
+
+        </section>
+    </div>
 </div>
 
-		<!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons">
-                    <li><a href="https://x.com/XunTngNguyn13" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://github.com/Tungcg1906" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/tungnguyen1998/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="mailto:tungcg1906@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                    </div>
-                </ul>
-            </div>
-        </footer>
-
-
-    <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.poptrox.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <ul class="icons">
+            <li><a href="https://x.com/XunTngNguyn13" class="icon brands fab fa-twitter"><span class="label"></span></a></li>
+            <li><a href="https://github.com/Tungcg1906" class="icon brands fab fa-github"><span class="label"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/tungnguyen1998/" class="icon brands fab fa-linkedin"><span class="label"></span></a></li>
+            <li><a href="mailto:tungcg1906@gmail.com" class="icon solid fas fa-envelope"><span class="label"></span></a></li>
+        </ul>
+    </div>
+</footer>
 
 </body>
 </html>
