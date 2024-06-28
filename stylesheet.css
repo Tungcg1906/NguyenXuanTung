@@ -231,35 +231,6 @@ body.talks-page .talk-item {
   margin: 20px 0; /* Space between talk items */
 }
 
-/* CSS for publications.html */
-body.publications-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh; /* Full height of the viewport */
-  margin: 0;
-}
-
-body.publications-page .sidenav {
-  position: fixed;
-  left: 0;
-}
-
-body.publications-page .publications-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-}
-
-body.publications-page .publication-item {
-  width: 100%;
-  max-width: 800px; /* Set a max-width to prevent it from getting too wide */
-  margin: 20px 0; /* Space between publication items */
-}
-
 
 .sidenav {
   width: 200px; /* Adjust width as needed */
