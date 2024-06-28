@@ -1,56 +1,66 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Nguyen Xuan Tung</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico?" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <meta name="google-site-verification" content="pSEhyk-pzzrIVkWPV1Ul96aa9kQzAQchUKlB59M6P-0" />
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="is-preload">
+<body class="index-background">
 
-<!-- Navigation -->
-<nav>
-    <div class="nav navbar-nav navbar-nav-first">
-        <ul>
-            <li><a href="index.html">About me</a></li>
-            <li><a href="experiences.html">Experiences</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="talks.html">Talks</a></li>
-        </ul>
+    <div class="sidenav">
+        <div class="navblock">
+            <div class="navblock_text">
+                <a id="about-link" class="nav-link" href="./index.html">About</a>
+                <a id="experiences-link" class="nav-link" href="./experiences.html">Experiences</a>
+                <a id="research-link" class="nav-link" href="./publications.html">Publications</a>
+                <a id="portfolio-link" class="nav-link" href="./talks.html">Talks</a>
+            </div>
+        </div>
+        <div class="social_links">
+            <a class="about_links" target="blank" href="https://www.linkedin.com/in/tungnguyen1998/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="about_links" target="blank" href="https://github.com/Tungcg1906">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="about_links" target="blank" href="mailto:tungcg1906@gmail.com">
+                <i class="icon solid fas fa-envelope"></i>
+            </a>
+        </div>
     </div>
-</nav>
-
-<!-- Header -->
-<header id="header">
-    <div class="inner">
-        <a href="#" class="image avatar"><img src="images/avatar.jpeg" alt="" class="avatar-image"/></a>
-        <h1 class="white-text"><strong>I am Nguyen Xuan Tung</strong>, Physicist<br />
-        and Data Scientist<br /> </h1>
-    </div>
-</header>
-
-<!-- Main -->
-<div id="main">
-    <!-- One -->
-    <section id="one">
-        <header class="major">
-            <h2>About me</h2>
-        </header>
-        <p>I am currently based in Padova, working as a Junior Research Fellow with INFN and SciComp at RPTU, focusing on "Particle Detector Optimization with Deep Learning Techniques." I am a physicist and data scientist graduated at the University of Padova with Msc in Physics of Data.</p>
-        <p>Previously, I served as a laboratory research assistant in the Biophysics and Cell Biology Department at the University of Debrecen. There, I explored the expression of wild-type and mutant Kv1.3 channels in the CHO cell line, employing patch-clamp techniques and analyzing the resulting data. Additionally, I worked as a research analyst at the Neurochip Lab, where I examined neuronal recordings from in vitro neuronal cultures using multi-electrode arrays (MEAs). My research involved developing theories related to transfer entropy, coincidence analysis, and functional connectivity.
-            Currently, I am collaborating with the SciComp team at RPTU on developing algorithmic differentiation for calorimeter applications at INFN.</p>
-        <p>I aspire to leverage my knowledge and skills to make a significant impact, aiding organizations in thriving in the digital era. My broad interests include biophysics, particle physics, and scientific computing, as well as the theory of computation, programming languages, and string theory. Additionally, I am deeply passionate about scientific machine learning, computer vision, and data science.</p>
+    
+    <div class="main">
+        <div class="profile-container">
+            <div class="profile-text">
+                <h1>Nguyen Xuan Tung</h1>
+                <p>Hi, <strong>I am Nguyen Xuan Tung</strong>, Physicist<br />
+                   and Data Scientist<br /> 
+                </p>
+                <p>I am currently based in Padova, working as a Junior Research Fellow with INFN and SciComp at RPTU, focusing on "Particle Detector Optimization with Deep Learning Techniques." I am a physicist and data scientist graduated at the University of Padova with Msc in Physics of Data.</p>
+                <p>I aspire to leverage my knowledge and skills to make a significant impact, aiding organizations in thriving in the digital era. My broad interests include biophysics, particle physics, and scientific computing, as well as the theory of computation, programming languages, and string theory. Additionally, I am deeply passionate about scientific machine learning, computer vision, and data science.</p>
+            </div>
+            <div class="profile-photo">
+                <img src="./images/avatar.webp" alt="Nguyen Xuan Tung" class="about_photo">
+            </div>
+        </div>
 
         <!-- Affiliations Section -->
         <div class="affiliations-section">
-            <h3>The organizations, and institutes I am currently working for, or have worked for in the past:</h3>
+            <h4>The organizations, and institutes I am currently working for, or have worked for in the past:</h4>
             <div class="affiliations-grid">
                 <div class="affiliation-item">
                     <a href="https://www.pd.infn.it/eng/"><img src="images/infn.png" alt="INFN Logo" /></a>
@@ -62,8 +72,8 @@
                     <a href="https://www.scicomp.uni-kl.de"><img src="images/scicomp_rptu_old_color_layer_1_141.png" alt="SciComp Logo" /></a>
                 </div>
                 <div class="affiliation-item">
-                    <a href="https://www.orcawise.com"><img src="images/orcawise-logo.png" alt="Orcawise Logo" /></a>
-                </div>
+                    <a href="https://www.orcawise.com"><img src="images/orcawise-logo.png" alt="Orcawise Logo" style="max-width: 60%; height: auto;" /></a>
+                </div>                
                 <div class="affiliation-item">
                     <a href="https://www.unipd.it/en/"><img src="images/unipd-universita-di-padova.png" alt="University of Padova Logo" /></a>
                 </div>
@@ -72,20 +82,36 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <ul class="icons">
-            <li><a href="https://x.com/XunTngNguyn13" class="icon brands fab fa-twitter"><span class="label"></span></a></li>
-            <li><a href="https://github.com/Tungcg1906" class="icon brands fab fa-github"><span class="label"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/tungnguyen1998/" class="icon brands fab fa-linkedin"><span class="label"></span></a></li>
-            <li><a href="mailto:tungcg1906@gmail.com" class="icon solid fas fa-envelope"><span class="label"></span></a></li>
-        </ul>
     </div>
-</footer>
+    
+    <script>
+        // Function to highlight the current active link
+        function setActiveLink() {
+            const links = document.querySelectorAll('.navblock_text a');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
 
+            // Get the current URL
+            const currentPath = window.location.pathname;
+
+            // Set the active class based on the current URL
+            if (currentPath.includes('index.html')) {
+                document.getElementById('about-link').classList.add('active');
+            } else if (currentPath.includes('experiences.html')) {
+                document.getElementById('experiences-link').classList.add('active');
+            } else if (currentPath.includes('research.html')) {
+                document.getElementById('research-link').classList.add('active');
+            } else if (currentPath.includes('portfolio.html')) {
+                document.getElementById('portfolio-link').classList.add('active');
+            } else if (currentPath.includes('blog.html')) {
+                document.getElementById('blog-link').classList.add('active');
+            }
+        }
+
+        // Call the function to set the active link on page load
+        window.onload = setActiveLink;
+    </script>
 </body>
 </html>

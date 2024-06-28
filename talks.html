@@ -1,84 +1,55 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Nguyen Xuan Tung - Talks</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico?" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <meta name="google-site-verification" content="pSEhyk-pzzrIVkWPV1Ul96aa9kQzAQchUKlB59M6P-0" />
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <style>
-        .affiliations-section {
-            margin-top: 20px;
-        }
-        .affiliations-section h3 {
-            margin-bottom: 10px;
-        }
-        .affiliations-section img {
-            max-width: 200px; /* Adjust the size as needed */
-            margin: 10px;
-            vertical-align: middle;
-        }
-        .affiliations-section .affiliation-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .affiliations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
-        .talk-item {
-            margin-bottom: 40px;
-        }
-        .talk-item h3 {
-            display: flex;
-            align-items: center;
-        }
-        .talk-item img {
-            max-width: 150px; /* Adjust the size of the image */
-            margin-left: 20px; /* Adjust spacing between title and image */
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body class="is-preload">
 
-<!-- Navigation -->
-<nav>
-    <div class="nav navbar-nav navbar-nav-first">
-        <ul>
-            <li><a href="index.html">About me</a></li>
-            <li><a href="experiences.html">Experiences</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="talks.html">Talks</a></li>
-            <!-- <li><a href="cv.html">CV</a></li> -->
-        </ul>
+<body class="talks-page">
+
+    <div class="sidenav">
+        <div class="navblock">
+            <div class="navblock_text">
+                <a id="about-link" class="nav-link" href="./index.html">About</a>
+                <a id="experiences-link" class="nav-link" href="./experiences.html">Experiences</a>
+                <a id="research-link" class="nav-link" href="./publications.html">Publications</a>
+                <a id="portfolio-link" class="nav-link" href="./talks.html">Talks</a>
+            </div>
+        </div>
+        <div class="social_links">
+            <a class="about_links" target="blank" href="https://www.linkedin.com/in/tungnguyen1998/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="about_links" target="blank" href="https://github.com/Tungcg1906">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="about_links" target="blank" href="mailto:tungcg1906@gmail.com">
+                <i class="icon solid fas fa-envelope"></i>
+            </a>
+        </div>
     </div>
-</nav>
-
-<!-- Header -->
-<header id="header">
-    <div class="inner">
-        <a href="#" class="image avatar"><img src="images/avatar.jpeg" alt="" class="avatar-image"/></a>
-        <h1 class="white-text"><strong>I am Nguyen Xuan Tung</strong>, Physicist<br />
-        and Data Scientist<br />
-    </div>
-</header>
-
-<!-- Main -->
-<div class="content">
-    <div id="main">
+    
+    <div id="main" class="talks-content">
         <!-- One -->
         <section id="one">
             <header class="major">
-                <h2>Talks, presentations, posters, workshops, ...</h2>
+                <h2>Presentations, posters, workshops, seminars</h2>
             </header>
-
+    
             <!-- Talk Items -->
             <div class="talk-item">
                 <h3>
@@ -86,29 +57,44 @@
                     <img src="images/scicomp_rptu_old_color_layer_1_141.png" alt="Neuro computing" />
                 </h3>
             </div>
-
+    
             <div class="talk-item">
                 <h3>
                     <a href="https://indico.cern.ch/event/1380163/" target="_blank">Particle Detectors optimization with Deep Learning techniques</a>
                     <img src="images/MODE.png" alt="Deep Learning Techniques" />
                 </h3>
             </div>
-
+    
         </section>
     </div>
-</div>
+    
+    <script>
+        // Function to highlight the current active link
+        function setActiveLink() {
+            const links = document.querySelectorAll('.navblock_text a');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <ul class="icons">
-            <li><a href="https://x.com/XunTngNguyn13" class="icon brands fab fa-twitter"><span class="label"></span></a></li>
-            <li><a href="https://github.com/Tungcg1906" class="icon brands fab fa-github"><span class="label"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/tungnguyen1998/" class="icon brands fab fa-linkedin"><span class="label"></span></a></li>
-            <li><a href="mailto:tungcg1906@gmail.com" class="icon solid fas fa-envelope"><span class="label"></span></a></li>
-        </ul>
-    </div>
-</footer>
+            // Get the current URL
+            const currentPath = window.location.pathname;
 
+            // Set the active class based on the current URL
+            if (currentPath.includes('index.html')) {
+                document.getElementById('about-link').classList.add('active');
+            } else if (currentPath.includes('experiences.html')) {
+                document.getElementById('experiences-link').classList.add('active');
+            } else if (currentPath.includes('publications.html')) {
+                document.getElementById('research-link').classList.add('active');
+            } else if (currentPath.includes('talks.html')) {
+                document.getElementById('portfolio-link').classList.add('active');
+            } else if (currentPath.includes('blog.html')) {
+                document.getElementById('blog-link').classList.add('active');
+            }
+        }
+
+        // Call the function to set the active link on page load
+        window.onload = setActiveLink;
+    </script>
 </body>
 </html>
