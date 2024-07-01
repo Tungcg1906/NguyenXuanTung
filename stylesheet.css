@@ -35,7 +35,7 @@ body.index-background {
 }
 
 .sidenav .navblock_text a {
-  padding: 8px 8px 8px 16px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -45,7 +45,7 @@ body.index-background {
 .sidenav .social_links a {
   font-size: 25px;
   color: #818181;
-  padding: 8px 8px 8px 16px;
+  padding: 3px 3px 3px 3px;
   display: block;
 }
 
