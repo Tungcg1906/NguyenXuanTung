@@ -5,26 +5,14 @@ body {
 }
 
 /* Style page content */
-/* Background styling for only index.html */
 body.index-background {
-  /*background-image: url('./images/collision.gif'); */
-  background-size: cover; /* Ensures the background image covers the entire body */
-  background-repeat: no-repeat; /* Prevents the background image from repeating */
-  background-attachment: fixed; /* Keeps the background image fixed in the viewport */
-  height: 100vh; /* Make sure background covers full height of viewport */
-}
-
-.main {
-  margin-left: 20%; /* Same as your original styling */
-  font-size: 22px; /* Increased text size for scrolling */
-  line-height: 35px;
-  padding: 10%;
-  z-index: 1; /* Ensure content appears above background */
-  position: relative; /* Ensure content stays on top of background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .sidenav {
-  height: 100%;
   width: 250px;
   position: fixed;
   z-index: 1;
@@ -36,126 +24,63 @@ body.index-background {
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
-.sidenav .navblock_text a {
-  padding: 8px 8px 8px 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav .navblock_text a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 260px; /* Same as the width of the sidenav */
-  padding: 20px;
-}
-
-.sidenav .social_links a {
-  font-size: 25px;
-  color: #818181;
-  padding: 3px 3px 3px 3px;
-  display: block;
-}
-
-.content {
-  margin-left: 250px;
-  padding: 16px;
-}
-
-.navblock {
-  margin:auto;
-  width: 100%;
-}
-
 .navblock_text {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding: 0 10px; /* Add padding to avoid overflow */
 }
 
 .navblock_text a {
-  padding: 26px 16px 26px 16px;
+  padding: 10px 16px; /* Adjust padding for space around text */
+  margin-bottom: 10px; /* Increase margin to create space between links */
   text-decoration: none;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px; /* Adjusted font size */
   color: #818181;
-  display: block;
+  width: calc(100% - 20px); /* Ensure links fit within the container */
+  box-sizing: border-box;
 }
 
 .navblock_text a:hover {
   color: #CFD8DC;
 }
 
-.footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #818181;
-  text-align: center;
-}
-
-
-a {
+.navblock_text a.active {
   color: #3498DB;
-  text-decoration: none;
+  font-weight: bold;
 }
 
-.about_photo{
+.main {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+.social_links {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.about_photo {
   display: block;
   margin-top: 5%;
   width: 300px;
-  height:300px;
-  object-fit:cover;
-  border-radius:50%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
 }
-
-.about_logo{
-  display: block;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about_text {
-  text-align: center;
-}
-
-.about_links {
-  text-align: center;
-  padding: 5% 5% 5% 5%;
-}
-
 
 /* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .sidenav {
-      width: 100%;
-      height: auto;
-      position: relative;
-  }
-
-  .sidenav .navblock_text a, .sidenav .social_links a {
-      text-align: center;
-      float: none;
-      padding: 8px 16px;
-  }
-
-  .content {
-      margin-left: 0;
-  }
-
-  .social_links {
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-  }
+.social_links {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 /* Responsive styles for smaller screens */
@@ -186,6 +111,7 @@ a {
       display: flex;
       justify-content: center;
       padding: 10px 0;
+      flex-wrap: wrap; /* Allow icons to wrap to the next line */
   }
 }
 
@@ -211,12 +137,20 @@ a {
       max-width: 100%;
       margin: 0;
   }
+
   .social_links {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      flex-wrap: wrap; /* Allow icons to wrap to the next line */
+  }
+
+  .social_links a {
+      margin: 5px; /* Add margin to prevent overlap */
+      flex: 1 1 50px; /* Adjust the width of each icon */
+  }
 }
-}
+
 
 
 .about_links {
