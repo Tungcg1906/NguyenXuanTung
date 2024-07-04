@@ -87,6 +87,17 @@ body.index-background {
 }
 
 /* Responsive styles for smaller screens */
+@media screen and (max-width: 992px) {
+  .sidenav {
+      width: 50%; /* Adjust the sidebar width for medium screens */
+      position: relative; /* Relative positioning */
+  }
+
+  .main {
+      margin-left: 50%; /* Adjust the margin for the main content */
+  }
+}
+
 @media screen and (max-width: 768px) {
   .sidenav {
       width: 100%;
@@ -102,7 +113,7 @@ body.index-background {
 
   .content {
       margin-left: 0;
-      padding: 16px;
+      padding: 10%;
   }
 
   .main {
