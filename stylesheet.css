@@ -10,7 +10,6 @@ body.index-background {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-  display: flex;
   justify-content: center;  /* Centers content horizontally */
   align-items: center;     /* Centers content vertically */
 }
@@ -25,6 +24,7 @@ body.index-background {
   background-color: #111;
   padding-top: 20px;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 .navblock_text {
@@ -58,6 +58,7 @@ body.index-background {
 .main {
   margin-left: 260px;
   padding: 20px;
+  
 }
 
 .social_links {
@@ -89,81 +90,77 @@ body.index-background {
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 992px) {
   .sidenav {
-      width: 50%; /* Adjust the sidebar width for medium screens */
-      position: relative; /* Relative positioning */
+    width: 50%; /* Adjust the sidebar width for medium screens */
+    position: relative; /* Relative positioning */
+  }
+
+  .navblock_text a {
+    font-size: 18px; /* Smaller font size for medium screens */
+    padding: 10px; /* Adjust padding for medium screens */
   }
 
   .main {
-      margin-left: 50%; /* Adjust the margin for the main content */
+    margin-left: 50%; /* Adjust the margin for the main content */
   }
 }
 
 @media screen and (max-width: 768px) {
   .sidenav {
-      width: 100%;
-      height: auto;
-      position: relative;
+    width: 40%; /* Smaller width for smaller screens */
+    height: auto;
+    position: relative;
   }
 
-  .sidenav .navblock_text a, .sidenav .social_links a {
-      text-align: center;
-      float: none;
-      padding: 8px 16px;
+  .navblock_text a {
+    font-size: 16px; /* Smaller font size for small screens */
+    padding: 8px; /* Adjust padding for small screens */
   }
 
-  .content {
-      margin-left: 0;
-      padding: 10%;
-  }
-
-  .main {
-      margin-left: 0;
-      padding: 10%;
+  .content, .main {
+    margin-left: 0;
+    padding: 10%;
   }
 
   .social_links {
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
   }
 }
 
 @media screen and (max-width: 480px) {
-  .sidenav .navblock_text a, .sidenav .social_links a {
-      font-size: 20px;
+  .sidenav {
+    width: 100px; /* Smaller width for very small screens */
   }
 
-  .content {
-      padding: 8px;
+  .navblock_text a {
+    font-size: 14px; /* Smaller font size for very small screens */
+    padding: 6px; /* Adjust padding for very small screens */
   }
 
-  .main {
-      padding: 5%;
+  .content, .main {
+    padding: 5%;
   }
 
   .profile-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile-text, .profile-photo {
-      max-width: 100%;
-      margin: 0;
-  }
-
-  .social_links {
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    max-width: 100%;
+    margin: 0;
   }
 
   .social_links a {
-      margin: 5px; /* Add margin to prevent overlap */
-      flex: 1 1 50px; /* Adjust the width of each icon */
+    margin: 5px; /* Add margin to prevent overlap */
+    flex: 1 1 50px; /* Adjust the width of each icon */
   }
 }
+
+
+
 
 
 
@@ -399,5 +396,3 @@ header.major h2 {
   height: auto;
   border-radius: 50%;
 }
-
-
