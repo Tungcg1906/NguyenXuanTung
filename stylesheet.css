@@ -87,10 +87,11 @@ body.index-background {
   margin-bottom: 20px;
 }
 
+/* Media queries for different screen sizes */
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 992px) {
   .sidenav {
-    width: 50%; /* Adjust the sidebar width for medium screens */
+    width: 200px; /* Adjust the sidebar width for medium screens */
     position: relative; /* Relative positioning */
   }
 
@@ -100,13 +101,13 @@ body.index-background {
   }
 
   .main {
-    margin-left: 50%; /* Adjust the margin for the main content */
+    margin-left: 200px; /* Adjust the margin for the main content */
   }
 }
 
 @media screen and (max-width: 768px) {
   .sidenav {
-    width: 40%; /* Smaller width for smaller screens */
+    width: 150px; /* Smaller width for smaller screens */
     height: auto;
     position: relative;
   }
@@ -116,22 +117,33 @@ body.index-background {
     padding: 8px; /* Adjust padding for small screens */
   }
 
-  .content, .main {
-    margin-left: 0;
-    padding: 10%;
+  .main {
+    margin-left: 150px;
+    padding: 10%; /* Ensure the main content isn't too narrow */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sidenav {
+    width: 120px;
   }
 
-  .social_links {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+  .main {
+    margin-left: 120px;
+  }
+
+  .navblock_text a {
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .sidenav {
     width: 100px; /* Smaller width for very small screens */
+  }
+
+  .main {
+    margin-left: 100px;
   }
 
   .navblock_text a {
@@ -158,9 +170,6 @@ body.index-background {
     flex: 1 1 50px; /* Adjust the width of each icon */
   }
 }
-
-
-
 
 
 
